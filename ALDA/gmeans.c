@@ -335,7 +335,7 @@ void performKmean(int nrows, int ncols, double** data, int** mask){
 		preprocess(x1, nrows, z1);
 		andersondarling(z1, nrows);
 
-		if(cluster_array[current_cluster].testScore <= 1.869 || cluster_array[current_cluster].nrows <=25)
+		if(cluster_array[current_cluster].testScore <= 1.869 || cluster_array[current_cluster].nrows <=7)
 		{
 			current_cluster++;
 		}
