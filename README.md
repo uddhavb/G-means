@@ -28,7 +28,9 @@ For above command filenames can be:
 Please make sure all files mentioned above are kept in data folder.
 
 #### To plot the graph to display generated clusters run the following command:
+
 ``` Rscript plot_gmeans.R ```
+
 Above command will generate Rplots.pdf file with all visualization.
 
 
