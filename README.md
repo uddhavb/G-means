@@ -52,12 +52,14 @@ For above command filenames is:
 #### Note:
 Please note that all files are in data folder, hence filepath is 'data'.
 
-#### To plot the graph to display generated clusters run the following command:
+#### To plot the graphs to display generated clusters for synthetic and real-world data, run the following commands:
 
-``` Rscript plot_gmeans.R ```
+``` Rscript filename ```
+
+#### Where the filename is either plot_gmean5.R or plot_ecoli_gmeans.R, depending on the dataset for which plots are to be generated
 
 Above command will generate Rplots.pdf file with all visualizations.
 
-
+Note: Make sure the path to the bin folder for R installation is included in the Windows PATH. 
    
  
