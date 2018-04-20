@@ -409,17 +409,9 @@ int main(int argc, char** argv) {
     char c, *line;
 
     char *filename = argv[1];
-    char *folder = "data/";
-
-    char *full_filename = (char *) malloc(1 + strlen(folder)+ strlen(filename) );
-
-	strcat(full_filename, folder);
-	strcat(full_filename, filename);
-
-    printf("full filename %s\n", full_filename);
 
     //open file
-	fp = fopen(full_filename, "r");
+	fp = fopen(filename, "r");
     if(fp == NULL) {
             perror("can't open file\n");
             exit(errno);
