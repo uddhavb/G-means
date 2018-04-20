@@ -1,13 +1,25 @@
 # G-Means Clustering   
 
-## Steps to execute programme: (Windows systems)  
+## Steps to execute programme: (Windows systems)
+
+### Setup C environment:
+
+We need to have MinGW intalled and integrated in windows.
+
+Please follow this link to setup MinGW : 
+[Setup MinGW](http://www.multigesture.net/articles/how-to-install-mingw-msys-and-eclipse-on-windows/)
+
+### Setup Project:
+
 Clone the repository using git (ensure [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) is installed on the system)   
   
 ```git clone https://github.ncsu.edu/sjgurav/G-Means.git```   
    
 Go to the cloned repository. 
 
-``` cd G-Means ```  
+``` cd G-Means ``` 
+
+### Compile and Run Program:
    
  Compile the necessary files:  
  
@@ -22,7 +34,11 @@ Run the executable file:
 
 For above command filenames can be:
 
-``` gmean2.csv, gmean3.csv, gmean4.csv, ecoli.csv ```
+``` gmean2.csv, gmean3.csv, gmean4.csv, gmean5.csv, ecoli.csv ```
+
+#### Example:
+``` ./mygmeans.exe gmean3.csv ```
+
 
 #### Note:
 Please make sure all files mentioned above are kept in data folder.
@@ -31,7 +47,7 @@ Please make sure all files mentioned above are kept in data folder.
 
 ``` Rscript plot_gmeans.R ```
 
-Above command will generate Rplots.pdf file with all visualization.
+Above command will generate Rplots.pdf file with all visualizations.
 
 
    
