@@ -32,18 +32,25 @@ Go to the cloned repository.
  ```gcc -o mygmeans gmeans.o seq_kmeans.o data.o command.o cluster.o -lm```  
 
 Run the executable file:  
-```./mygmeans.exe filename```
+```./mygmeans.exe filepath/filename```
 
-For above command filenames can be:
+#### Example:
+``` ./mygmeans.exe data/gmean3.csv ```
+
+``` ./mygmeans.exe data/gmean4.csv ```
+
+``` ./mygmeans.exe data/ecoli.csv ```
+
+#### Note:
+Please make sure filepath is relative to the current folder in case if there is any. If file is directly in current folder, there is no need of filepath.
+
+For above command filenames is:
 
 ``` gmean2.csv, gmean3.csv, gmean4.csv, gmean5.csv, ecoli.csv ```
 
-#### Example:
-``` ./mygmeans.exe gmean3.csv ```
-
 
 #### Note:
-Please make sure all files mentioned above are kept in data folder.
+Please note that all files are in data folder, hence filepath is 'data'.
 
 #### To plot the graph to display generated clusters run the following command:
 
