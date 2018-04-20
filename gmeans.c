@@ -399,7 +399,7 @@ int* get_clusters_rows_index(int k, int nrows, int* clusterid) {
 	return clusterrows;
 }
 
-int main() {
+int main(int argc, char** argv) {
 	FILE *fp;
     double **data;
     int **mask;
@@ -408,8 +408,18 @@ int main() {
     int i, j;
     char c, *line;
 
+    char *filename = argv[1];
+    char *folder = "data/";
+
+    char *full_filename = (char *) malloc(1 + strlen(folder)+ strlen(filename) );
+
+	strcat(full_filename, folder);
+	strcat(full_filename, filename);
+
+    printf("full filename %s\n", full_filename);
+
     //open file
-	fp = fopen("testData.csv", "r");
+	fp = fopen(full_filename, "r");
     if(fp == NULL) {
             perror("can't open file\n");
             exit(errno);
@@ -456,7 +466,7 @@ int main() {
 
     num_cols = col;
     performKmean(row,col,data,mask);
-    create_csv("t.csv", row,col);
+    create_csv("output.csv", row,col);
     //perform_mykmeans(row,col,data, mask);
     fclose(fp);
     return 0;
