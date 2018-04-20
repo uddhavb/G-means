@@ -9,4 +9,17 @@ Go to the cloned repository.
 
 ``` cd G-Means ```  
    
+ Compile the necessary files:  
+ 
+ ```gcc -std=c99 -c gmeans.c my_kmeans.c data.c command.c cluster.c ```  
+   
+ Link the object files to create an exceutable file.  
+ 
+ ```gcc -o mygmeans gmeans.o my_kmeans.o data.o command.o cluster.o -lm```  
+
+Run the executable file:  
+```./mygmeans```  
+
+
+   
  
