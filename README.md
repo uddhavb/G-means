@@ -60,6 +60,6 @@ Please note that all files are in data folder, hence filepath is 'data'.
 
 Above command will generate Rplots.pdf file with all visualizations.
 
-
+Note: Make sure the path to the bin folder for R installation is included in the Windows PATH. 
    
  
