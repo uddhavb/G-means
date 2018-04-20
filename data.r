@@ -1,15 +1,15 @@
 set.seed(100)
 library(mvtnorm)
-sigma <- matrix(c(1, 0.5, 0.5, 1), nrow = 2)
-x <- rmvnorm(100, mean = c(0,0), sigma = sigma, method = "chol")
+sigma <- matrix(c(1, 0.5, 0.5, 1, 0.5, 1,0.5, 1,0.5, 1), nrow = 5)
+x <- rmvnorm(100, mean = c(0,0,0,0,0), sigma = sigma, method = "chol")
 
-x = rbind(x, rmvnorm(100, mean = c(10,10), sigma = sigma, method = "chol"))
+x = rbind(x, rmvnorm(100, mean = c(10,10,10,10,10), sigma = sigma, method = "chol"))
 
-x = rbind(x, rmvnorm(100, mean = c(0,10), sigma = sigma, method = "chol"))
+x = rbind(x, rmvnorm(100, mean = c(0,10,0,10,0), sigma = sigma, method = "chol"))
 
-x = rbind(x, rmvnorm(100, mean = c(4,4), sigma = sigma, method = "chol"))
+x = rbind(x, rmvnorm(100, mean = c(4,4,10,10,0), sigma = sigma, method = "chol"))
 
-x = rbind(x, rmvnorm(100, mean = c(5,8), sigma = sigma, method = "chol"))
+x = rbind(x, rmvnorm(100, mean = c(0,10,0,10,0), sigma = sigma, method = "chol"))
 
 plot(x)
 

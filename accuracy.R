@@ -1,8 +1,11 @@
+output = read.csv("D:/output_gmean5.csv") 
+clusters = output[,3]#gmeans output clusters
+#x = c( -0.141 , 0.066)
+#x = rbind(x, c(4.872 ,  7.376))
 
-clusters = read.csv("D:/output.csv") 
-clusters = clusters[,3]#gmeans output clusters
 centroids = x # gmeans output centroids
-mydata = mydata;
+
+mydata = output[,1:2];
 index = 0;
 wss = 0;
 for (element in clusters) {
