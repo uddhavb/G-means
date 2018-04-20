@@ -24,9 +24,12 @@ For above command filenames can be:
 
 ``` gmean2.csv, gmean3.csv, gmean4.csv, ecoli.csv ```
 
-## Note:
-
+#### Note:
 Please make sure all files mentioned above are kept in data folder.
+
+#### To plot the graph to display generated clusters run the following command:
+``` Rscript plot_gmeans.R ```
+Above command will generate Rplots.pdf file with all visualization.
 
 
    
