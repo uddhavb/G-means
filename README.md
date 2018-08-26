@@ -13,7 +13,7 @@ Please follow this link to setup MinGW :
 
 Clone the repository using git (ensure [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) is installed on the system)   
   
-```git clone https://github.ncsu.edu/sjgurav/G-Means.git```   
+```git clone https://github.com/uddhavb/G-means.git```   
    
 Go to the cloned repository. 
 
